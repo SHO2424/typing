@@ -1,0 +1,117 @@
+body {
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.reset  {
+    opacity: 0;
+    margin-top: 30px;
+}
+.bg{
+    z-index: -1;
+    color: gray;
+    opacity: .5;
+}
+
+.intro {
+    position: relative;
+    // background: rebeccapurple;
+    background: linear-gradient(rebeccapurple, blue);
+    height: 100vh;
+}
+.startgame {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > .intro {
+        letter-spacing: .2em;
+    }
+    & > .title {
+        font-size: 65px;
+        text-decoration: underline;
+        letter-spacing: .1em;
+        color: white;
+       & > span {
+        font-size: 105px;
+        color: #00b63a;
+        }
+    }
+}
+.main_item {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+//   background: rebeccapurple;
+    opacity: 0;
+    z-index: -1;
+
+}
+.game {
+    // opacity: 0;s
+    // z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    // background: #000;
+}
+.time {
+    font-size: 34px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: 2px solid;
+    // background: black;
+    margin-right:10px ;
+}
+.timer {
+    color: #c67575;
+    opacity: 0;
+    display: inline-flex;
+    justify-content: center;
+    
+}
+.text {
+    display: inline-block;
+    margin-top: 62px;
+    font-size: 26px;
+} 
+.target  {
+    color: white;
+    font-size: 60px;
+    letter-spacing: .1em;
+}
+.result {
+    color: white;
+    font-size: 21px;
+}
+.btn {
+    cursor: pointer;
+    border-radius: 40px;
+    border: none;
+    height: 50px;
+    width: 100px;
+    background:  aqua;
+}
+
+.inview {
+    opacity: 1;
+    z-index: 1;
+    transition: all .5s;
+ 
+}
+.outview {
+    opacity: 0;
+    z-index: -1;
+    // transition: all .5s;
+}

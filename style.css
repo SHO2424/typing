@@ -1,0 +1,119 @@
+body {
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.reset {
+  opacity: 0;
+  margin-top: 30px;
+}
+
+.bg {
+  z-index: -1;
+  color: gray;
+  opacity: 0.5;
+}
+
+.intro {
+  position: relative;
+  background: linear-gradient(rebeccapurple, blue);
+  height: 100vh;
+}
+
+.startgame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.startgame > .intro {
+  letter-spacing: 0.2em;
+}
+.startgame > .title {
+  font-size: 65px;
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+  color: white;
+}
+.startgame > .title > span {
+  font-size: 105px;
+  color: #00b63a;
+}
+
+.main_item {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: -1;
+}
+
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time {
+  font-size: 34px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 2px solid;
+  margin-right: 10px;
+}
+
+.timer {
+  color: #c67575;
+  opacity: 0;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.text {
+  display: inline-block;
+  margin-top: 62px;
+  font-size: 26px;
+}
+
+.target {
+  color: white;
+  font-size: 60px;
+  letter-spacing: 0.1em;
+}
+
+.result {
+  color: white;
+  font-size: 21px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 40px;
+  border: none;
+  height: 50px;
+  width: 100px;
+  background: aqua;
+}
+
+.inview {
+  opacity: 1;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.outview {
+  opacity: 0;
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */
